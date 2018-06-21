@@ -61,3 +61,7 @@ variable "key_file" {
   description = "The ssh public key for using with the cloud provider."
   default = ""
 }
+
+variable "certificate_arn" {
+    description = "ARN of the Server Certificate"
+}
