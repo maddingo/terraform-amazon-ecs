@@ -54,12 +54,10 @@ variable "instance_type" {
 
 variable "key_name" {
   description = "The aws ssh key name."
-  default = ""
 }
 
 variable "key_file" {
-  description = "The ssh public key for using with the cloud provider."
-  default = ""
+  description = "The ssh public key for using with the cloud provider. (use ssh-keygen -y -f private-key.pem >public_key.pub)"
 }
 
 variable "certificate_arn" {
